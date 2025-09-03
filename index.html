@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DINIZ NEXTI - Soluções em tecnologia para residências e empresas: manutenção, redes, sites, CFTV e treinamento.">
+  <title>DINIZ NEXTI — Soluções em Tecnologia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-visual" aria-hidden="true"></div>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container header-inner">
+      <img src="logo.png" alt="DINIZ NEXTI" class="logo" onerror="this.style.display='none'">
+      <h1 class="brand">DINIZ NEXTI</h1>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰<span class="sr-only">Abrir menu</span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Menu principal">
+        <a href="#home">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Início -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Suporte técnico e soluções digitais locais</h2>
+        <p>Atendimento profissional para residências e empresas: manutenção, redes, sites, segurança, treinamentos.</p>
+        <p class="hero-cta"><a class="btn primary" href="#contato">Peça um orçamento</a></p>
+      </div>
+      <div class="hero-image" aria-hidden="true">💻🔧</div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <h2>Serviços</h2>
+      <div class="services-grid">
+        <article class="card">
+          <div class="card-emoji">🖥️</div>
+          <h3>Manutenção de computadores</h3>
+          <p>Formatação, upgrade, remoção de vírus e otimização de desempenho.</p>
+        </article>
+        <article class="card">
+          <div class="card-emoji">📶</div>
+          <h3>Redes e Wi‑Fi</h3>
+          <p>Instalação e configuração de redes cabeadas e sem fio, otimização e segurança.</p>
+        </article>
+        <article class="card">
+          <div class="card-emoji">🌐</div>
+          <h3>Sites e lojas</h3>
+          <p>Sites institucionais e lojas virtuais simples e responsivas.</p>
+        </article>
+        <article class="card">
+          <div class="card-emoji">📷</div>
+          <h3>CFTV</h3>
+          <p>Instalação de câmeras, gravação e configuração remota.</p>
+        </article>
+        <article class="card">
+          <div class="card-emoji">🎓</div>
+          <h3>Treinamentos</h3>
+          <p>Capacitação básica em ferramentas digitais e segurança online.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section alt">
+    <div class="container">
+      <h2>Sobre nós</h2>
+      <p>Empresa MEI com foco em atendimento humano e soluções práticas. Priorizamos clareza, preço justo e disponibilidade local.</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section contact">
+    <div class="container">
+      <h2>Contato</h2>
+      <div class="contact-grid">
+        <div>
+          <p>📍 São Luís - MA</p>
+          <p>✉️ <a href="mailto:contato@suaempresa.com.br">rafaeldiniz44@gmail.com</a></p>
+          <p>📱 WhatsApp: <a href="https://wa.me/5598988845232">(98) 988845232</a></p>
+        </div>
+  <form id="contactForm" class="contact-form" action="#" method="post" novalidate data-endpoint="https://formspree.io/f/xandlnkk">
+          <!-- Substitua YOUR_FORM_ID pelo ID do seu formulário Formspree (ex: f/mayvlqaz) -->
+          <label for="nome">Nome</label>
+          <input id="nome" name="name" type="text" required>
+
+          <label for="email">E‑mail</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="message" rows="4" required></textarea>
+
+          <input type="hidden" name="_subject" value="Novo contato pelo site - DINIZ NEXTI">
+          <div class="form-actions">
+            <button id="sendBtn" type="submit" class="btn primary">Enviar</button>
+            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  
+  <!-- Prova social / Testemunhos -->
+  <section id="prova" class="section">
+    <div class="container">
+      <h2>O que clientes dizem</h2>
+      <div class="testimonials">
+        <blockquote class="testimonial">
+          <div class="testimonial-head">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Maria Silva" class="testimonial-avatar" onerror="this.style.display='none'">
+            <cite>— Maria Silva, Makro Engenharia</cite>
+          </div>
+          <p>"Excelente atendimento, rápido e eficiente. Resolveu todos os problemas do meu escritório."</p>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial-head">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80" alt="João Pereira" class="testimonial-avatar" onerror="this.style.display='none'">
+            <cite>— João Pereira, Vignoli São Luís </cite>
+          </div>
+          <p>"Profissional, transparente e com preço justo. Recomendo para negócios."</p>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="testimonial-head">
+            <img src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?auto=format&fit=crop&w=400&q=80" alt="Clínica Saúde+" class="testimonial-avatar" onerror="this.style.display='none'">
+            <cite>— Paulo, Farmácia do Povo</cite>
+          </div>
+          <p>"Instalou nossa rede e o sistema de CFTV com cuidado e suporte pós-venda excelente."</p>
+        </blockquote>
+      </div>
+
+      <div class="client-logos">
+        <img src="https://placehold.co/160x44/00d4ff/022c43?text=Cliente+1" alt="Cliente 1" loading="lazy">
+        <img src="https://placehold.co/160x44/0099ff/ffffff?text=Cliente+2" alt="Cliente 2" loading="lazy">
+        <img src="https://placehold.co/160x44/022c43/ffffff?text=Cliente+3" alt="Cliente 3" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 DINIZ NEXTI — Atendimento local e soluções digitais</p>
+      <p class="muted">Feito com ♥ • <a href="#sobre">Saiba mais</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle simples do menu em telas pequenas
+    (function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('primary-nav');
+      btn && btn.addEventListener('click', function(){
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        nav && nav.classList.toggle('open');
+      });
+    })();
+  </script>
+  <script>
+    // Formspree submit helper
+    (function(){
+      var form = document.getElementById('contactForm');
+      if(!form) return;
+      var sendBtn = document.getElementById('sendBtn');
+      var msg = document.getElementById('formMessage');
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        msg.textContent = '';
+        var endpoint = form.getAttribute('data-endpoint');
+        if(!endpoint || endpoint.indexOf('YOUR_FORM_ID')!==-1){
+          msg.textContent = 'Configure o ID do Formspree em data-endpoint no formulário.';
+          msg.className = 'form-message error';
+          return;
+        }
+
+        sendBtn.disabled = true;
+        sendBtn.textContent = 'Enviando...';
+
+        var data = new FormData(form);
+
+        fetch(endpoint, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response){
+          if(response.ok){
+            form.reset();
+            msg.textContent = 'Mensagem enviada — obrigado!';
+            msg.className = 'form-message success';
+          } else {
+            response.json().then(function(r){
+              msg.textContent = (r && r.error) ? r.error : 'Erro ao enviar. Tente novamente.';
+              msg.className = 'form-message error';
+            }).catch(function(){
+              msg.textContent = 'Erro ao enviar. Tente novamente.';
+              msg.className = 'form-message error';
+            });
+          }
+        }).catch(function(){
+          msg.textContent = 'Erro de rede. Verifique sua conexão.';
+          msg.className = 'form-message error';
+        }).finally(function(){
+          sendBtn.disabled = false;
+          sendBtn.textContent = 'Enviar';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
