@@ -62,6 +62,37 @@ body {
 .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:var(--radius);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(0,212,255,0.08);box-shadow:0 8px 30px rgba(2,6,23,0.6);text-align:left;transition:transform .25s ease,box-shadow .25s ease}
 .card:hover{transform:translateY(-6px);box-shadow:0 18px 60px rgba(0,212,255,0.08)}
 
+/* Galeria serviços realizados */
+.realizados-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin-top:8px}
+.realizados-gallery figure{background:rgba(255,255,255,0.03);border:1px solid rgba(0,212,255,0.08);padding:6px;border-radius:10px;display:flex;flex-direction:column;gap:6px;box-shadow:0 4px 18px rgba(0,212,255,0.05);transition:transform .25s ease,box-shadow .25s ease}
+.realizados-gallery figure:hover{transform:translateY(-4px);box-shadow:0 10px 40px rgba(0,212,255,0.10)}
+.realizados-gallery img{width:100%;height:120px;object-fit:cover;border-radius:6px;filter:brightness(.92);transition:filter .25s ease}
+.realizados-gallery figure:hover img{filter:brightness(1.02)}
+.realizados-gallery figcaption{text-align:center;font-size:.75rem;color:var(--muted);letter-spacing:.5px}
+
+/* Lightbox */
+.lightbox-overlay{position:fixed;inset:0;background:rgba(0,10,20,0.86);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease;z-index:1200;padding:40px 20px}
+.lightbox-overlay.open{opacity:1;pointer-events:auto}
+.lightbox-content{max-width:880px;max-height:80vh;display:flex;flex-direction:column;align-items:center;gap:10px}
+.lightbox-content img{max-width:100%;max-height:70vh;border-radius:12px;box-shadow:0 18px 60px rgba(0,212,255,0.25);border:1px solid rgba(0,212,255,0.25);background:#02121e;object-fit:contain}
+.lightbox-content figcaption{font-size:.85rem;color:var(--muted);text-align:center}
+.lightbox-close,.lightbox-prev,.lightbox-next{position:absolute;background:linear-gradient(90deg,var(--accent),#45f2ff);color:#022;border:0;border-radius:999px;padding:10px 14px;font-size:1rem;cursor:pointer;font-weight:600;box-shadow:0 6px 26px rgba(0,212,255,0.3);display:flex;align-items:center;justify-content:center}
+.lightbox-close{top:14px;right:14px}
+.lightbox-prev{left:18px}
+.lightbox-next{right:18px}
+.lightbox-prev,.lightbox-next{background:rgba(0,212,255,0.18);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#e6f6ff;font-size:1.4rem;width:54px;height:54px}
+.lightbox-prev:hover,.lightbox-next:hover{background:rgba(0,212,255,0.3)}
+.lightbox-close:hover{filter:brightness(1.08)}
+@media (max-width:700px){
+  .lightbox-prev,.lightbox-next{width:46px;height:46px;font-size:1.2rem}
+  .lightbox-content img{max-height:60vh}
+}
+
+@media (max-width:900px){
+  .realizados-gallery{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+  .realizados-gallery img{height:100px}
+}
+
 /* Testemunhos */
 .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
 .testimonial{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;border:1px solid rgba(79,232,255,0.06);box-shadow:0 8px 30px rgba(2,6,23,0.45)}
