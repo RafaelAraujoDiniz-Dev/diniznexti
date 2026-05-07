@@ -45,5 +45,4 @@ Abra o arquivo index.html no navegador.
 - Atualize conteudo e imagens em index.html e na pasta assets/.
 - Ajuste estilos globais no arquivo style.css.
 
-## Licenca
-Defina a licenca do projeto aqui.
+
